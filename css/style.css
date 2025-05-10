@@ -1,0 +1,551 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+.black {
+  color: #1c1c1c;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+.gray {
+  color: #748182;
+}
+html{
+  scroll-padding-top: 88px;
+}
+/* --------------------global style --------------------- */
+/*--------------------------- start navbar ---------------- */
+
+
+.my-nav .navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.my-nav .nav-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+}
+.navbar-nav .nav-link.active::after {
+  content: "";
+  background-color: #fff;
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+}
+/*----------------------- end navbar-----------------------  */
+
+/* _-------------------------------------start header ======== */
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#header .container .main-span {
+  font-size: 3.125rem;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+#header .container h1 {
+  font-size: 3.75rem;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+}
+#header .container .icons li i {
+  font-size: 0.875rem;
+  padding: 5px;
+  background-color: #01090f;
+}
+#header .container .icons li {
+  padding: 20px 8px;
+}
+/* end header  */
+/*------------------------- start about ---------------------- */
+#about{
+  padding-top:50px ;
+  padding-bottom: 60px;
+}
+#about .row .col-md-7 p {
+  font-size: 15px;
+  /* width: 70%; */
+  line-height: 1.6;
+}
+
+#about .row .col-md-7 h3 {
+  font-weight: 800;
+}
+#about .row .col-md-7 .sub-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+#about .hero-img {
+  padding: 0 7px 0 30px;
+  position: relative;
+  z-index: 1000;
+}
+#about .hero-img:after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.skill-container {
+  margin-bottom: 25px;
+}
+
+.skill-bar {
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  height: 23px;
+  width: 100%;
+}
+
+.skill-bar-fill {
+  background: #1c1c1c;
+  color: #fff;
+  height: 100%;
+  line-height: 35px;
+  padding: 0 10px;
+  border-radius:6px;
+
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+.skill-deg{
+  font-size: 13px;
+  font-weight: 500;
+}
+#about .col-md-7 .btn-2:hover{
+  color: #fff;
+  background-color: #000;
+
+}
+#about .col-md-7 .btn-2{
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 13px;
+  padding: 8px 50px;
+  transition: all 500ms;
+}
+#about .col-md-7 .btn-1{
+  font-size: 13px;
+  padding: 8px 50px;
+  transition: all 500ms;
+}
+#about .col-md-7 .btn-1:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[start services]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
+#services {
+  background-color: #f7f7f7;
+}
+
+#services .header-section h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#services .header-section h3::after {
+  content: "";
+  width: 18%;
+  height: 10px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -6px;
+  left: 460px;
+  z-index: 1;
+}
+#services .container .item:hover .item-icon {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+#services .container .item {
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+}
+#services .container .item h6 {
+  font-weight: 800;
+  font-size: 18px;
+  padding-top: 40px;
+}
+
+#services .container .item p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  padding-top: 10px;
+  width: 95%;
+}
+#services .container .item .item-icon {
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  border: 1px solid transparent;
+  padding: 20px;
+  font-size: 25px;
+  transition: all 500ms;
+}
+/* ==============================end services============================ */
+
+/* ---------------------------------start Portfolio----------------------------------- */
+
+#work .header-section h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+#work .header-section h3::after {
+  content: "";
+  width: 18%;
+  height: 10px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -6px;
+  left: 460px;
+  z-index: 1;
+}
+.nav-tabs {
+  border: transparent;
+  display: flex;
+  justify-content: center;
+}
+.nav-tabs .nav-link {
+  color: #1c1c1c;
+  font-weight: 700;
+  border: transparent;
+  font-family: "Poppins", sans-serif;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active::after {
+  content: "";
+  background-color: #1c1c1c;
+  width: 38%;
+  height: 2px;
+  position: absolute;
+  bottom: 4px;
+  left: 15px;
+}
+.nav-tabs .nav-link::after {
+  content: "";
+  background-color: #1c1c1c;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 4px;
+  left: 15px;
+  transition: all 500ms;
+}
+.nav-tabs .nav-link::after:hover {
+  width: 100%;
+}
+
+#work .layer {
+  width: 97%;
+  height: 97%;
+  background-color: #fff;
+  opacity: 0;
+  top: 5px;
+  right: 5px;
+
+
+  transition: all 0.3s;
+}
+#work .item:hover .layer h6 {
+  transform: translateY(10px);
+}
+#work .item:hover .layer .icon-item {
+  transform: translateY(-10px);
+}
+#work .item:hover .layer {
+  opacity: 0.9;
+}
+#work .container .icon-item i {
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid transparent;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 7px;
+}
+#work .container .icon-item {
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+#work .layer h6 {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+  padding-bottom: 20px;
+}
+#work .item .layer .icon-item i:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+#work .item .layer .icon-item a:hover .icon2 {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+/*============================= end portifolio =============================== */
+
+/* =====================start Testimonials =========================== */
+#clients {
+  background-color: #f7f7f7;
+padding-bottom: 150px;
+padding-top: 50px;
+}
+
+#clients .header-section h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+#clients .header-section h3::after {
+  content: "";
+  width: 25%;
+  height: 10px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -6px;
+  left: 420px;
+  z-index: 1;
+}
+#clients .my-slider .img-slider img {
+  width: 18%;
+  height: 18%;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+#clients .my-slider p {
+  font-size: 15px;
+}
+#clients .my-slider h6 {
+  font-weight: 600;
+}
+#clients .my-slider span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.carousel-indicators {
+  margin-bottom: -44px;
+ 
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #d6d6d6;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+.carousel-indicators .active {
+  background-color: #869791;
+}
+/* <!-- ==================end testimnials===================== --> */
+/* start counter  */
+#counter {
+  padding: 60px 0;
+}
+#counter .item h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+#counter .item p {
+  font-size: 15px;
+  font-weight: 600;
+}
+/* <!-- -----------------------end counter -------------------- --> */
+
+/* <!------------------------------ start team ------------------------------- --> */
+#team{
+  background-color: #f7f7f7;
+padding-top: 50px;
+padding-bottom: 100px;
+
+}
+#team .header-section h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+#team .header-section h3::after {
+  content: "";
+  width: 18%;
+  height: 10px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -6px;
+  left: 460px;
+  z-index: 1;
+}
+#team .layer{
+  width: 97%;
+  height: 97%;
+  background-color: #fff;
+  opacity: 0;
+  top: 5px;
+  right: 5px;
+text-align: center;
+transition: all 500ms;
+}
+#team .layer ul{
+  padding-top: 150px;
+  padding-left: 100px;
+}
+#team .container .layer i{
+  font-size: 20px;
+ 
+  padding: 5px;
+  color: #fff;
+  transition: all 500ms;
+}
+#team .container .layer li{
+display: flex;
+justify-content: center;
+align-items: center;
+  border: 1px solid #000;
+  background-color: #000;
+  border-radius: 50%;
+   height: 40px;
+  width: 40px;
+  transition: all 0.1s;
+ 
+   
+  
+}
+#team .container .layer li:hover i{
+  color: #000;
+}
+#team .container .layer li:hover{
+
+  background-color: #fff;
+}
+#team .item:hover .layer{
+  transform: rotateY(360deg);
+  opacity: 0.9;
+  
+
+}
+#team .item:hover img{
+  transform: scale(1.2);
+}
+#team .item img{
+  transition: all 500ms;
+}
+#team .img-details{
+  background-color: #5B5B5B;
+  padding: 25px;
+  color: #fff;
+}
+#team .img-details h4{
+ font-weight: 500;
+ font-size: 25px;
+}
+/* <!--===================================== END TEAM ====================================== --> */
+
+/* <!-- =============================start content ===================== --> */
+#contact{
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+#contact .header-section h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+#contact .header-section h3::after {
+  content: "";
+  width: 18%;
+  height: 10px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -6px;
+  left: 460px;
+  z-index: 1;
+}
+#contact .item:hover i{
+  color: #fff;
+  background-color: #000;
+}
+
+#contact .item i{
+  border: 1px solid transparent;
+  background-color:#F4F4F4 ;
+  border-radius: 50%;
+  padding: 18px;
+  transition: all 500ms;
+  
+
+}
+#contact .item p{
+  font-size: 15px;
+ 
+}
+#contact .item h6{
+  padding-top: 13px;
+}
+#contact form input{
+  background-color: #F4F4F4;
+}
+#contact form textarea{
+  background-color: #F4F4F4;
+  max-height: 160px;
+  height: 160px;
+}
+#contact form button:hover{
+  color: #000;
+  background-color: #fff;
+}
+#contact form button{
+  transition: all 500ms;
+}
+/* ======================end contact ===================== */
+/* =================start footer ============= */
+#footer{
+  background-color: #1C1C1C;
+  padding: 15px 0;
+ 
+}
+#footer p{
+  font-size: 13px;
+}
+
+/* =================end footer ============= */
